@@ -1,0 +1,87 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px black solid;
+  width: 100%;
+  padding:5px;
+}
+.yellowbox{
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+}
+.orangebox{
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+}
+.redbox{
+  width: 50px;
+  height: 50px;
+  background-color: red;
+}
+.lbbox{
+  width: 50px;
+  height: 50px;
+  background-color: lightblue;
+}
+.greybox{
+  width: 50px;
+  height: 50px;
+  background-color: grey;
+}
+.bluebox{
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+}
+.blackbox{
+  width: 50px;
+  height: 50px;
+  background-color: black;
+}
+.greenbox{
+  width: 50px;
+  height: 50px;
+  background-color: green;
+}
+.purplebox{
+  width: 50px;
+  height: 50px;
+  background-color: purple;
+}
+.brownbox{
+  width: 50px;
+  height: 50px;
+  background-color: brown;
+}
+.box{
+  width: 50px;
+  height: 50px;
+  background-color: pink;
+}
+.lightgreybox{
+  width: 50px;
+  height: 50px;
+  background-color: lightgrey;
+}
+
+.container > div:nth-child(even){
+  transition: all 500ms ease-in-out;
+}
+
+.container:hover div:nth-child(even){
+  transform: translate(500px) rotate(25deg);
+  height: 70px;
+  width:70px;
+}
+.container > div:nth-child(odd){
+    transition: all 500ms ease-in-out;
+}
+.container:hover div:nth-child(odd){
+  transform: translate(-500px,0px) rotate(25deg);
+  height: 25px;
+  width: 25px;
+}
