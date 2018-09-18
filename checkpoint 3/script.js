@@ -7,16 +7,20 @@ var bugBomb = 0;
 
 function update() {
   document.getElementById('text').value = killcount;
-  document.title = killcount +  "Ants killed";
-  document.getElementById('ammountOfGuns').innerHTML = "You own " + watergun "water guns"
+  document.title = killcount +  "Ants killed, ";
+//Water guns
+  document.getElementById('ammountOfGuns').innerHTML = "You own " + watergun + "water guns"
   document.getElementById('costWaterGun').innerHTML = ((watergun +1) * 15) + "quarters"
-
-  document.getElementById('ammountOfExterminatrs').innerHTML = "You've hired " + exterminator "exterminators"
+// exterminator
+  document.getElementById('ammountOfExterminatrs').innerHTML = "You've hired " + exterminator + "exterminators"
   document.getElementById('costExterminator').innerHTML = ((exterminator +1) * 90) + "quarters"
-
-  document.getElementById('ammountOfGuns').innerHTML = "You've used " + bugBomb "bug Bombs"
-  document.getElementById('costWaterGun').innerHTML = ((bugBomb +1) * 15) + "quarters"
+//Bug Bombs
+  document.getElementById('ammountOfBugBombs').innerHTML = "You've used " + bugBomb + "bug Bombs"
+  document.getElementById('costbugBomb').innerHTML = ((bugBomb +1) * 15) + "quarters"
 }
+
+setInterval(timer, 500)
+
 function add() {
   killcount = killcount + 1
   // document.getElementById('text').value = killcount;
@@ -49,4 +53,3 @@ function timer() {
   killcount = killcount + watergun;
   update()
 }
-setInterval(timer, 500)
